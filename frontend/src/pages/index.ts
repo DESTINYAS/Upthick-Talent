@@ -1,0 +1,17 @@
+export { default as About } from "./About/About";
+export { default as Contact } from "./contact/Contact";
+export { default as Beginner } from "./programs/beginners/Beginners";
+export { default as Business } from "./programs/business/Business";
+export { default as Map } from "./programs/map/map";
+export { default as Tech } from "./programs/techs/Tech";
+export { default as Home } from "./Home/Home";
+export { default as Job } from "./Job/Jobs";
+export { default as Programs } from "./programs/ProgramsPage";
+export { default as SoftwareDev } from "./ApplicationForm/SoftwareDev";
+export { default as ProductDesign } from "./ApplicationForm/ProductDesign";
+export { default as UIUXDesign } from "./ApplicationForm/UIUXDesign";
+export { default as AiData } from "./ApplicationForm/AiData";
+export { default as UptickTalentBusiness } from "./ApplicationForm/UptickTalentBusiness";
+export { default as UptickTalentMap } from "./ApplicationForm/UptickTalentMap";
+export { default as BlogDetails } from "./blog/BlogDetails";
+export { default as BlogPreview } from "./blog/BlogPreview";

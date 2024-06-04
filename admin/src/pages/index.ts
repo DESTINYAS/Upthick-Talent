@@ -1,0 +1,14 @@
+export { default as TechList } from "./Program/UptickTech/TechList";
+export { default as TechDetails } from "./Program/UptickTech/TechDetails";
+export { default as Login } from "./login/Login";
+export { default as BusinessList } from "./Program/UptickBusiness/BusinessList";
+export { default as BusinessDetails } from "./Program/UptickBusiness/BusinessList";
+export { default as MapList } from "./Program/UptickMap/MapList";
+export { default as MapDetails } from "./Program/UptickMap/MapDetails";
+export { default as Sidebar } from "./Sidebar/sidebar";
+export { default as JobForm } from "./jobs/JobForm";
+export { default as JobList } from "./job/JobList";
+export { default as JobDetail } from "./job/JobDetails";
+export { default as BlogList } from "./blogs/BlogList";
+export { default as BlogDetails } from "./blogs/BlogDetails";
+export { default as Dashboard } from "./dashboard/Dashboard";

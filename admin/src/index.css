@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.blog-lists {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.blog-lists .blog-lists-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-lists .blog-lists-head h6 {
+  font-weight: 900;
+  color: #000;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150.023%;
+}
+
+.blog-lists .blog-lists-head h6:last-child {
+  margin-right: 15rem;
+}
+
+.blog-item {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin: 1rem 0;
+}
+
+.blog-image {
+  height: 20vh;
+  position: relative;
+}
+
+.item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-image:hover {
+  opacity: 0.7;
+}
+
+.blog-content {
+  margin-left: 1rem;
+  color: #000;
+  font-family: Raleway;
+}
+
+.blog-content h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150.023%;
+  padding: 0.3rem 0;
+}
+
+.blog-content h6 {
+  font-size: x-small;
+}
+
+.blog-date {
+  margin-left: 6rem;
+}
+
+.blog-menu {
+  margin-left: 10rem;
+}
+
+.blog-file-upload {
+  border: solid #f7f7f7 1px;
+  border-radius: 8px;
+  background: #f7f7f7;
+  margin: 1rem 5rem;
+  cursor: pointer;
+  height: 10rem;
+  width: 100%;
+}
+
+.blog-file-upload h2 {
+  width: 6rem;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  margin: 5rem 7.5rem 2rem 7.5rem;
+  font-family: "Raleway";
+  font-size: small;
+}
+
+.blog-file-upload input[type="file"] {
+  display: none;
+}
+
+.blog-progress {
+  width: 100%;
+}
+
+.recent-jobs {
+  border-radius: 8px 8px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  color: var(--blue-blue-dark-shade-70, #15254c);
+  font-family: "Raleway";
+  /* font-size: 18px; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* table {
+  text-align: left;
+} */
+
+.td-image {
+  padding: 2px 0 2px 5px;
+}
+
+.td-image img {
+  width: 50px;
+  height: 50px;
+  display: inline;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+td.pushLeft,
+th.pushLeft {
+  text-align: left;
+}
+
+td {
+  font-size: small;
+  font-family: "Raleway";
+}
+
+#toasts {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-family: "Raleway";
+  font-size: small;
+  white-space: pre-line;
+}
+
+.toast.warning {
+  background-color: orange;
+}
+
+.toast.success {
+  background-color: green;
+}
+
+.toast.error {
+  background-color: red;
+}
+
+.button-loader .loader {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.main-loader .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #14141e transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

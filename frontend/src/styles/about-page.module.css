@@ -1,0 +1,456 @@
+.container {
+  padding: 60px;
+}
+
+.aboutHero {
+  color: #fff;
+}
+
+.heroContent,
+.storyContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.heroStory {
+  background: var(--bluebluelightshade-90, #edf2ff);
+  color: #000;
+}
+
+.heroDescription {
+  width: 100%;
+}
+
+.heroDescription h1,
+.storyDescription h1 {
+  font-family: "Raleway";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heroDescription h6,
+.storyDescription h6 {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 3rem;
+}
+
+.heroImage {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  width: 70%;
+  height: 70%;
+}
+
+.heroImage img:hover {
+  opacity: 0.7;
+}
+
+.storyDescription {
+  text-align: right;
+}
+
+.storyImage img {
+  width: 500px;
+  height: 300px;
+}
+
+.values {
+  background: var(--bluebluelightshade-90, #edf2ff);
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.values h2 {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.values h6 {
+  color: #000;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1.5rem;
+}
+
+.values .cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.values .card {
+  border-radius: 16px;
+  border: 1px solid var(--neutral-4, #4d4d4d);
+  background: #1c1c1c;
+  padding: 20px;
+}
+
+.values .card img {
+  margin-bottom: 1rem;
+}
+
+.values .card h2 {
+  color: var(--bluebluelightshade-30, #7ea3ff);
+  font-family: "Raleway";
+  font-size: 24px;
+
+  font-weight: 600;
+  line-height: 160%;
+  text-align: left;
+}
+
+.values .card h6 {
+  color: var(--neutral-8, #b3b3b3);
+  font-family: "Raleway";
+  font-size: 16px;
+  
+  font-weight: 400;
+  line-height: 160%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.achievements {
+  overflow: hidden;
+}
+
+.achievements h2 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.achievements h6 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 18px;
+
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1rem;
+}
+
+.achievements .cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.achievements .card {
+  border-radius: 16px;
+  border: 1px solid var(--blue-blue-dark-shade-60, #1c3166);
+  background: #1c1c1c;
+  padding: 30px;
+}
+
+.achievements .box {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.achievements .imageCard {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.achievements .card h2 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 24px;
+
+  font-weight: 600;
+  line-height: 160%;
+  margin-top: 0.5rem;
+}
+
+.achievements .card h6 {
+  color: var(--neutral-8, #b3b3b3);
+  font-family: "Raleway";
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.journey {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: 1px solid rgba(244, 235, 255, 0.19);
+  background: var(--white-shades-11, #f8f8f8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+}
+
+.journeyContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.journey .description {
+  padding: 40px;
+}
+
+.journey .description h1 {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.journey .description h6 {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 1.5rem;
+}
+
+.journey .imageId img {
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+/* Tablets and under */
+@media all and (max-width: 768px) {
+  .heroContent {
+    margin-top: 0;
+  }
+
+  .heroDescription h1,
+  .storyDescription h1 {
+    font-size: 30px;
+  }
+
+  .heroDescription h6,
+  .storyDescription h6 {
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 2rem;
+  }
+
+  .storyImage img {
+    height: 200px;
+    margin-top: 3rem;
+  }
+
+  .storyDescription {
+    text-align: left;
+  }
+
+  .values {
+    padding: 2px 0;
+  }
+
+  .values h2,
+  .achievements h2 {
+    font-size: 40px;
+  }
+
+  .values h6,
+  .achievements h6 {
+    font-size: 15px;
+  }
+
+  .values .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements .card {
+    padding: 20px;
+  }
+
+  .achievements .box {
+    height: 40vh;
+  }
+
+  .journey .description h1 {
+    font-size: 35px;
+  }
+
+  .journey .description h6 {
+    font-size: 16px;
+  }
+
+  .journey button {
+    font-size: 12px;
+    padding: 1px 10px;
+  }
+
+  .journey .imageId img {
+    margin-left: 0;
+    margin-top: 6rem;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 500px) {
+  .container {
+    padding: 30px;
+  }
+
+  .heroContent,
+  .storyContent,
+  .values .cards,
+  .achievements .cards,
+  .journeyContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .heroImage {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .storyContent {
+    gap: 0;
+  }
+
+  .storyContent {
+    margin: 0;
+  }
+
+  .storyDescription h1 {
+    font-size: 40px;
+  }
+
+  .storyContent > :first-child {
+    order: 2;
+  }
+
+  .achievements h2 {
+    font-size: 35px;
+  }
+
+  .achievements h6 {
+    font-size: 13px;
+  }
+
+  .achievements .cards {
+    padding: 40px;
+  }
+
+  .achievements .card {
+    padding: 10px 2px;
+    border-radius: 5px;
+  }
+
+  .achievements .box {
+    height: 32vh;
+    width: 100%;
+  }
+
+  .achievements .card h2 {
+    font-size: 18px;
+  }
+
+  .achievements .box {
+    width: 100%;
+  }
+
+  .journey .description h1 {
+    font-size: 40px;
+  }
+
+  .journey .imageId img {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 400px) {
+  .achievements .cards {
+    padding: 20px;
+  }
+
+  .journey .imageId img {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 320px) {
+  .heroDescription h1 {
+    font-size: 35px;
+  }
+
+  .heroDescription h6,
+  .storyDescription h6 {
+    font-size: 12px;
+  }
+
+  .heroImage {
+    margin-left: 1.5rem;
+  }
+
+  .values h2 {
+    font-size: 40px;
+  }
+
+  .values h6 {
+    font-size: 12px;
+  }
+  .achievements .cards {
+    margin-top: 2rem;
+    gap: 20px;
+  }
+
+  .achievements .card {
+    padding: 10px;
+  }
+
+  .achievements .box {
+    height: auto;
+  }
+
+  .achievements .card h2 {
+    font-size: 13px;
+  }
+
+  .achievements .card h6 {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+
+  .journey .description {
+    padding: 30px;
+  }
+
+  .journey .description h1 {
+    font-size: 35px;
+    margin-top: 0;
+  }
+}

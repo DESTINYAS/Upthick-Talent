@@ -1,0 +1,59 @@
+.homeBlog .cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .homeBlog .card {
+    border-radius: 16px;
+    border: 1px solid var(--blue-blue-dark-shade-60, #1c3166);
+    background: #1c1c1c;
+    padding: 20px;
+  }
+  
+  .homeBlog .box {
+    width: 100%;
+    position: relative;
+  }
+  
+  .homeBlog .imageCard {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .homeBlog .card h2 {
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0.5rem 0;
+  }
+  
+  .homeBlog .card h6 {
+    color: var(--neutral-8, #b3b3b3);
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  
+  .homeBlog .learnMore {
+    margin: 1rem 0;
+  }
+  
+  /* Tablets and under */
+  @media all and (max-width: 768px) {
+    .homeBlog .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile */
+  @media all and (max-width: 500px) {
+    .homeBlog .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

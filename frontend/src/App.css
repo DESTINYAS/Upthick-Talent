@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  background: rgba(17, 17, 17, 0.02);
+}
+
+.slick-current {
+  transform: scale(1.0); /* Adjust the scale factor as needed for the zoom-out effect */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+nav {
+  background: var(--blue-blue-dark-shade-90, #070c19);
+  display: flex;
+  padding: 24px 60px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+nav.about {
+  background: #121212;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 2rem;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+nav ul li a:hover {
+  color: #477bff;
+}
+
+nav .fa {
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 35%;
+  /* top: 10%; */
+  background-color: #070c19;
+  min-width: 160px;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-btn button {
+  color: var(--neutral-11, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Raleway";
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  border-radius: 8px;
+  background: var(--blue-blue-dark-shade-blue, #477bff);
+  padding: 10px 20px;
+  font-size: small;
+}
+
+nav button:hover {
+  opacity: 0.8;
+}
+
+nav .menu-icon {
+  color: #fff;
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  background: #070c19;
+  right: 2rem;
+  top: 60px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  color: #fff;
+  font-family: "Raleway";
+}
+
+.dropdown-menu .nav-btn {
+  background: #477bff;
+  text-align: center;
+}
+
+.dropdown-menu button {
+  font-size: small;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+.pre-footer-h1 {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 900;
+}
+
+.pre-footer-h6 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+#toasts {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+}
+
+.toast.warning {
+  background-color: orange;
+}
+
+.toast.success {
+  background-color: green;
+}
+
+.toast.error {
+  background-color: red;
+}
+
+footer {
+  border: 1px solid rgba(82, 82, 82, 0.17);
+  background: var(--basic-black, #121212);
+  padding: 60px;
+  color: #fff;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+footer .newsletter h6 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  margin-top: 3rem;
+}
+
+footer .newsletter form {
+  display: flex;
+}
+
+footer .newsletter form input {
+  margin-top: 1rem;
+  border-radius: 8px 0px 0px 8px;
+  background: var(--neutral-10, #e6e6e6);
+  height: 40px;
+  width: 200px;
+  padding: 10px 16px;
+}
+
+::placeholder {
+  color: var(--neutral-7, #999);
+  font-family: "Raleway";
+  font-weight: 400;
+  line-height: 160%;
+  font-size: small;
+}
+
+footer .newsletter form button {
+  border-radius: 0px 8px 8px 0px;
+  background: var(--blue-blue-dark-shade-blue, #477bff);
+  color: var(--neutral-11, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Raleway";
+  font-size: x-small;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  height: 40px;
+  padding: 10px 16px;
+  margin-top: 1rem;
+}
+
+footer .useful-links {
+  margin-left: 8rem;
+}
+
+footer .programs {
+  margin-left: 2rem;
+}
+
+footer .useful-links h5,
+footer .programs h5,
+footer .contact-us h5 {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 160%;
+  font-size: 18px;
+}
+
+footer ul {
+  margin-top: 1.5rem;
+}
+
+footer ul li {
+  color: var(--neutral-8, #d6d6d6);
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 0.3rem 0;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .contact-us ul li {
+  display: inline-flex;
+  align-items: center;
+}
+
+footer .contact-us ul li span {
+  padding-left: 0.5rem;
+}
+
+footer hr {
+  text-align: center;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 49, 102, 0) 21.19%,
+    #1c3166 50.61%,
+    rgba(28, 49, 102, 0) 80.65%,
+    rgba(28, 49, 102, 0) 80.65%
+  );
+}
+
+footer .footer-end {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-end h6 {
+  color: var(--neutral-5, #666);
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+footer .footer-end .footer-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-end .footer-socials img {
+  margin: 0 0.5rem;
+}
+
+/* Tablets and under */
+@media all and (max-width: 768px) {
+  nav {
+    padding: 20px 20px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    font-size: small;
+  }
+
+  nav button {
+    padding: 5px 10px;
+    font-size: xx-small;
+  }
+
+  footer {
+    padding: 60px 40px;
+  }
+
+  footer .useful-links {
+    margin-left: 0rem;
+  }
+
+  footer .programs {
+    margin-left: 0;
+  }
+
+  footer .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer .footer-content > *:first-child {
+    grid-column: 1 / span 3;
+    margin-bottom: 1rem;
+  }
+
+  #content1::after,
+  #content2::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  footer .footer-end {
+    margin-top: 4rem;
+  }
+
+  footer .footer-end h6 {
+    font-size: 10px;
+  }
+
+  .pre-footer-h6 {
+    font-size: 15px;
+    width: 60%;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 500px) {
+  nav .nav-links,
+  nav .nav-btn {
+    display: none;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+
+  footer {
+    padding: 40px 40px;
+  }
+
+  footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-content > *:first-child {
+    grid-column: 1 / span 2;
+    margin-bottom: 1rem;
+  }
+
+  footer .footer-content > *:nth-child(4) {
+    grid-column: 1 / span 2;
+  }
+
+  footer .contact-us ul li {
+    margin-right: 0.5rem;
+  }
+
+  footer ul {
+    margin-top: 0.5rem;
+  }
+
+  footer .footer-end {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-end .footer-socials:nth-child(2) {
+    order: 3;
+    margin: 0.5rem;
+  }
+
+  .pre-footer-h6 {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 320px) {
+  footer .newsletter form {
+    display: flex;
+    width: 100%;
+  }
+
+  footer .newsletter form input {
+    width: 100%;
+  }
+
+  ::placeholder {
+    font-size: xx-small;
+  }
+
+  footer .newsletter form button {
+    font-size: xx-small;
+  }
+
+  .pre-footer-h6 {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  footer .useful-links li,
+  footer .programs li,
+  footer .contact-us li {
+    font-size: 12px;
+  }
+}
